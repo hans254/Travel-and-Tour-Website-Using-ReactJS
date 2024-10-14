@@ -5,7 +5,7 @@ import { FaRegWindowClose } from "react-icons/fa";
 import { TbGridDots } from "react-icons/tb";
 
 const Navbar = () => {
-  const [active, setActive] = useState(navBar)
+  const [active, setActive] = useState('navBar')
   // function to toggle navbar
   const showNav = ()=>{
     setActive('navBar activeNavbar')
@@ -19,32 +19,32 @@ const Navbar = () => {
     <section className='navBarSetion'>
       <header className="header flex">
         <div className="logoDiv">
-          <a href="" className="logo flex">
+          <a href="#" className="logo flex">
             <h1><MdOutlineTravelExplore className="icon"/>Travel.</h1>
           </a>
         </div>
         <div className={active}>
           <ul className="navLists flex">
             <li className="navItem">
-              <a href="" className="navLink">Home</a>
+              <a href="#" className="navLink">Home</a>
             </li>
             <li className="navItem">
-              <a href="" className="navLink">Packages</a>
+              <a href="#" className="navLink">Packages</a>
             </li>
             <li className="navItem">
-              <a href="" className="navLink">Shop</a>
+              <a href="#" className="navLink">Shop</a>
             </li>
             <li className="navItem">
-              <a href="" className="navLink">Pages</a>
+              <a href="#" className="navLink">Pages</a>
             </li>
             <li className="navItem">
-              <a href="" className="navLink">News</a>
+              <a href="#" className="navLink">News</a>
             </li>
             <li className="navItem">
-              <a href="" className="navLink">Contact</a>
+              <a href="#" className="navLink">Contact</a>
             </li>
             <button className="btn">
-              <a href="">BOOK NOW</a>
+              <a href="#">BOOK NOW</a>
             </button>
           </ul>
           <div onClick={removeNavbar} className="closeNavbar">
